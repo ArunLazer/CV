@@ -21,7 +21,7 @@ export const ContactInfo = () => {
           {[
             { icon: "phone", data: "+91 8122495266" },
             { icon: "envelope-o", data: "arunlazer4@gmail.com" },
-            { icon: "linkedin", data: "www.linkedIn.com" },
+            { icon: "linkedin", data: "https://www.linkedin.com/in/arun-lazar-289b9ba5" },
             { icon: "map-marker", data: "Nagercoil, TamilNadu, India" },
           ].map(({ icon, data }:{[key:string]:string},index:number) => {
             return (
