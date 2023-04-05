@@ -1,7 +1,7 @@
 
 ## Demo
 
-Live Demo (https://al-resume.netlify.app/).
+[Live Demo](https://al-resume.netlify.app/).
 
 # CV# Getting Started with Vite
 
