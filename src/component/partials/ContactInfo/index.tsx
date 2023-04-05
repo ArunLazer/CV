@@ -66,7 +66,7 @@ export const ContactInfo = () => {
         <h3 className="title">languages</h3>
         <ul>
           {[
-            { title: "English", percent: "w-90" },
+            { title: "English", percent: "w-100" },
             { title: "Tamil", percent: "w-100" },
           ].map(({ title, percent }: { [key: string]: string }, index:number) => {
             return (

@@ -26,6 +26,12 @@ body {
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
+@media only screen and (max-width: 600px) {
+  .container .left_side {
+    margin-left: 270px;
+  }
+}
+
 .container .left_side {
   position: relative;
   background: #003147;
@@ -228,3 +234,4 @@ p {
 .fab-item{
   margin: 45px auto -39px !important;
 }
+

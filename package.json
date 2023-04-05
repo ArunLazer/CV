@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://arunlazer-coder.github.io/CV",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",

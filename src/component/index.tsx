@@ -1,27 +1,22 @@
 import { ContactInfo } from "./partials/ContactInfo";
 import { ProfileInfo } from "./partials/ProfileInfo";
 import { Container, Button, Link } from "react-floating-action-button";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
+import ResumePdf from '../assets/resume.pdf'
+import { useRef } from "react";
+
+
 
 export const Resume = () => {
-  const generatePDF = () => {
-    const input: any = document.getElementById("resume");
-    html2canvas(input).then((canvas) => {
-      const pdf = new jsPDF();
-      pdf.addImage(canvas.toDataURL("image/png"), "PNG", 0, 0, 210, 297);
-      pdf.save("download.pdf");
-    });
-  };
+  const downloadBtn = useRef<any>(null)
   return (
     <>
       <div className="container" id="resume">
         <ContactInfo />
         <ProfileInfo />
       </div>
-
+      <a href={ResumePdf} download className="d-none" ref={downloadBtn}></a>
       <Container>
-        <Button icon="fa fa-download" onClick={generatePDF} />
+        <Button icon="fa fa-download" onClick={() => downloadBtn?.current?.click()} />
         <Button icon="fa fa-plus" rotate={true} />
       </Container>
     </>
